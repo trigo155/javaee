@@ -37,6 +37,7 @@ public class ContactosController {
 	public String eliminar(@RequestParam("email") String email) {
 		service.eliminar(email);
 		return "forward:/recuperarContactos";
+		//volvemos al controlador para que nos recupere los contactos actualizados
 	}
 	
 	@GetMapping("recuperarContactos")
